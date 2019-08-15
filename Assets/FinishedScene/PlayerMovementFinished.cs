@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovementFinished : MonoBehaviour
 {
     float xinput;
     public float moveSpeed;
@@ -16,7 +16,6 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         playerRB = this.GetComponent<Rigidbody>();
-        
     }
 
     // Update is called once per frame
@@ -34,7 +33,6 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
-/*
     void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.tag == "ground")
@@ -42,5 +40,5 @@ public class PlayerMovement : MonoBehaviour
             canJump = true;
         }
     }
-    */
+
 }
